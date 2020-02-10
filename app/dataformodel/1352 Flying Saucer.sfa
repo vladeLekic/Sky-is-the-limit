@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'Mat',
+      parameters: [
+        {
+          baseColor: '1352 Flying Saucer',
+        },
+        {
+          baseColorTint: [
+            0.59999999999999998,
+            0.59999999999999998,
+            0.59999999999999998,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'dataformodel/1352 Flying Saucer.obj',
+    name: '1352 Flying Saucer',
+    recenter: 'root',
+    scale: 0.0020436,
+  },
+  samplers: [
+    {
+      file: 'dataformodel\\1352 Flying Saucer.png',
+      name: '1352 Flying Saucer',
+      pipeline_name: '1352 Flying Saucer.png',
+    },
+  ],
+  version: '0.54:2',
+}

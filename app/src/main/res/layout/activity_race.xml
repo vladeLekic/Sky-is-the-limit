@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RaceActivity">
+
+
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/buttonForward"
+        android:layout_width="441dp"
+        android:layout_height="509dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/arFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/arFragment"
+        app:layout_constraintTop_toTopOf="@+id/arFragment"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="527dp"
+        android:layout_height="294dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/arFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="@+id/arFragment"
+        app:layout_constraintTop_toTopOf="@+id/arFragment"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="125dp"
+        android:layout_height="731dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/arFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/arFragment"
+        app:layout_constraintTop_toTopOf="@+id/arFragment"
+        app:layout_constraintVertical_bias="0.755" />
+
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="131dp"
+        android:layout_height="744dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/arFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/arFragment"
+        app:layout_constraintTop_toTopOf="@+id/arFragment"
+        app:layout_constraintVertical_bias="0.733" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

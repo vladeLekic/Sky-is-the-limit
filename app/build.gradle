@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.gmail.freshideassoftware.skyislimit"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.11.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+}
+
+
+sceneform.asset('dataformodel/Hot_Air_Balloon_01.obj',
+        'default',
+        'dataformodel/Hot_Air_Balloon_01.sfa',
+        'src/main/assets/hot_air_balloon_v1')
+
+sceneform.asset('dataformodel/cloud.obj',
+        'default',
+        'dataformodel/cloud.sfa',
+        'src/main/assets/cloud_v1')
+
+sceneform.asset('dataformodel/Heart.obj',
+        'default',
+        'dataformodel/Heart.sfa',
+        'src/main/assets/heart_v1')
+
+sceneform.asset('dataformodel/sun.obj',
+        'default',
+        'dataformodel/sun.sfa',
+        'src/main/assets/sun')
+
+sceneform.asset('dataformodel/1226 Moon.obj',
+        'default',
+        'dataformodel/1226 Moon.sfa',
+        'src/main/assets/moon')
+
+sceneform.asset('dataformodel/CUPIC_AIRSHIP.obj',
+        'default',
+        'dataformodel/CUPIC_AIRSHIP.sfa',
+        'src/main/assets/airship_v1')
+
+sceneform.asset('dataformodel/CUPIC_HOTAIRBALLOON.obj',
+        'default',
+        'dataformodel/CUPIC_HOTAIRBALLOON.sfa',
+        'src/main/assets/hot_air_balloon_v2')
+
+sceneform.asset('dataformodel/1352 Flying Saucer.obj',
+        'default',
+        'dataformodel/1352 Flying Saucer.sfa',
+        'src/main/assets/ufo_v1')
+
+sceneform.asset('dataformodel/flying sacuer.obj',
+        'default',
+        'dataformodel/flying sacuer.sfa',
+        'src/main/assets/ufo_v2')
+
+sceneform.asset('dataformodel/CUPIC_FYINGSAUCER.obj',
+        'default',
+        'dataformodel/CUPIC_FYINGSAUCER.sfa',
+        'src/main/assets/ufo_v3')
+
+sceneform.asset('dataformodel/FlyingSacuer.obj',
+        'default',
+        'dataformodel/FlyingSacuer.sfa',
+        'src/main/assets/ufo_v4')
+
+sceneform.asset('dataformodel/1389 Hot Air Balloon.obj',
+        'default',
+        'dataformodel/1389 Hot Air Balloon.sfa',
+        'src/main/assets/hot_air_balloon_v3')
+
+sceneform.asset('dataformodel/HotAirBalloon_01(1).obj',
+        'default',
+        'dataformodel/HotAirBalloon_01(1).sfa',
+        'src/main/assets/hot_air_balloon_v4')
+
+
+sceneform.asset('dataformodel/xp.obj',
+        'default',
+        'dataformodel/xp.sfa',
+        'src/main/assets/xp')
+
+sceneform.asset('dataformodel/Ocean.obj',
+        'default',
+        'dataformodel/Ocean.sfa',
+        'src/main/assets/ocean')

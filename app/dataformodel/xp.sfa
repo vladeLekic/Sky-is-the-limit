@@ -1,0 +1,69 @@
+{
+  materials: [
+    {
+      name: 'Green_0',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.129412,
+            0.73333300000000001,
+            0.298039,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Turquoise_0',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0,
+            0.62745099999999998,
+            0.90980399999999995,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Color',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'dataformodel/xp.obj',
+    name: 'xp',
+    recenter: 'root',
+    scale: 0.0022670000000000003,
+  },
+  version: '0.54:2',
+}
